@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is the genmonkey project</p>
+    
+    <button onclick="getIDP()">Generate IDP</button>
+    <p id="Demo">ID: </p>
+    <p id="Demo2">Pass:</p>
+
+    <script>
+        function getIDP() {
+            const id = ["ID : sakib@gmail.com",
+             "ID : salim@gmail.com", "ID : Arafat@gmail.com",
+             "ID : sumit@gmail.com ", "ID : pranto@gmail.com "];
+            const pass = ["Pass: Sakib@", "Pass: Salim@", "Pass:Arafat@", "Pass: Sumit@", "Pass: Pranto@" ];
+             let random = getRandomInt(1, 5);
+             console.log(id[random]);
+             console.log(pass[random]);
+             console.log(random);
+             document.getElementById("Demo").innerHTML = id[random];
+             document.getElementById("Demo2").innerHTML = pass[random];
+        }
+
+        function getRandomInt (min, max){
+            let random = Math.floor(Math.random() * (max - min)) + 1;
+            return random;
+        }
+    </script>
+</body>
+</html>
