@@ -1,0 +1,13 @@
+function linearSearch(arr, val) {
+    const len = arr.length;
+    //console.log("len is " + len);
+    for (i = 0 ; i < len ; i++ ) {
+        if (arr[i] === val) {
+            return i;
+        }
+    };
+    return "Not found!";
+    
+}
+
+console.log(linearSearch(['a', 'b', 'c', 'd', 'e', 'c'], 'c'));
