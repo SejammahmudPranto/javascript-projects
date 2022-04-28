@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sentence = `I was the President of Remians Debating Society Executive Panel 2016-17. Also I was appointed as a child reporter in Bangladesh's first ever online children news portal "Channel Agami". Currently I am working on various startups, which I believe will change the world in near future. I am a Muslim by religion and heart. My nationality is Bangladeshi. Also I am enthusiastic in Programming and also highly interested in Robotics. I am also a microcontroller programmer and worked on various projects using Arduino and all automated sensors. I started debating from School Level."`;
+
+        let matches = sentence.match(/inturo/gi);
+        let count = matches ? matches.length : 0 ; // "?" is ternary operator which helps if matches is null they through 0
+        document.write(count);
+    </script>
+</body>
+</html>
