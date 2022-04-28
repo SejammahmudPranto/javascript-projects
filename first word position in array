@@ -1,0 +1,7 @@
+const sentence = `I was the President of Remians Debating Society Executive Panel 2016-17. Also I was appointed as a child reporter in Bangladesh's first ever online children news portal "Channel Agami". Currently I am working on various startups, which I believe will change the world in near future. I am a Muslim by religion and heart. My nationality is Bangladeshi. Also I am enthusiastic in Programming and also highly interested in Robotics. I am also a microcontroller programmer and worked on various projects using Arduino and all automated sensors. I started debating from School Level."`;
+
+let position = sentence.search(/presidents/i);
+document.getElementById("Demo").innerHTML = "This is working" ;
+//let count = matches ? matches.length : 0 ; // "?" is ternary operator which helps if matches is null they through 0
+positionFinal = position >= 0 ? position : "Not found" ;
+console.log(positionFinal);
