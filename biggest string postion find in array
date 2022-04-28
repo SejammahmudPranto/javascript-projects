@@ -1,0 +1,20 @@
+function longestString(arr) {
+    const len = arr.length;
+    var highest = 0;
+    var highestPos = 0;
+    //console.log("len is " + len);
+    for (i = 0 ; i < len ; i++ ) {
+        let currentWord = arr[i].split("");
+        let  currentWordLen = currentWord.length;
+        
+        if (currentWordLen > highest) {
+            highest = currentWordLen;
+            highestPos = i;
+        }
+      
+    } ;
+    return highestPos;
+    
+}
+
+console.log(longestString(["akash", "saad", "daiyan", "pranto", "supranpubg","dhfkjsdnfdsf                    sdf", "askdgnagsdavasvdbu", "askdgnagsdav"]));
