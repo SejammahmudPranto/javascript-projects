@@ -1,0 +1,26 @@
+const obj = {
+    a: "lws",
+    b: undefined,
+    c: false,
+    d: NaN,
+    e: "",
+    f: 40,
+    g: "supran"
+};
+
+
+const trueWorthy = function(obj) {
+
+    for (let i in obj) {
+        if (!obj[i]) {
+            delete obj[i];
+        }
+    }
+    return obj;
+
+};
+
+
+
+//const newObj = trueWorthy(obj);
+console.log(trueWorthy(obj));
